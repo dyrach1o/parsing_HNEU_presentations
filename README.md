@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Web Content Parser</title>
+    <title>Парсер веб-контенту</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -53,89 +53,89 @@
 </head>
 <body>
 
-<h1>Web Content Parser</h1>
+<h1>Парсер веб-контенту</h1>
 
-<p>A simple command-line tool to <strong>parse</strong>, <strong>copy</strong>, and <strong>save</strong> specific content from a webpage.</p>
+<p>Простий інструмент командного рядка для <strong>парсингу</strong>, <strong>копіювання</strong> та <strong>збереження</strong> конкретного контенту з веб-сторінки.</p>
 
-<h2>Features</h2>
+<h2>Особливості</h2>
 <ul>
-    <li><strong>Parse Content</strong>: Extracts content from a specified section of a webpage.</li>
-    <li><strong>Copy to Clipboard</strong>: Copies the extracted content to your clipboard.</li>
-    <li><strong>Save to File</strong>: Saves the parsed content as a <code>.txt</code> file in a chosen directory.</li>
+    <li><strong>Парсинг контенту</strong>: Витягує контент з визначеного розділу веб-сторінки.</li>
+    <li><strong>Копіювати в буфер обміну</strong>: Копіює витягнутий контент у ваш буфер обміну.</li>
+    <li><strong>Зберегти у файл</strong>: Зберігає витягнутий контент як <code>.txt</code> файл у вибрану директорію.</li>
 </ul>
 
-<h2>Prerequisites</h2>
-<p>Ensure you have <strong>Python 3.x</strong> installed and the required packages:</p>
+<h2>Передумови</h2>
+<p>Переконайтеся, що у вас встановлений <strong>Python 3.x</strong> та необхідні пакети:</p>
 <ul>
     <li><code>requests</code></li>
     <li><code>beautifulsoup4</code></li>
     <li><code>pyperclip</code></li>
 </ul>
-<p>To install these packages, use the following command:</p>
+<p>Щоб встановити ці пакети, скористайтеся наступною командою:</p>
 <pre><code>pip install requests beautifulsoup4 pyperclip</code></pre>
 
-<h2>Usage</h2>
+<h2>Використання</h2>
 <ol>
-    <li>Clone or download this repository.</li>
-    <li>Open a terminal and navigate to the directory containing the script.</li>
-    <li>Run the script:
+    <li>Клонуйте або завантажте цей репозиторій.</li>
+    <li>Відкрийте термінал і перейдіть до директорії, що містить скрипт.</li>
+    <li>Запустіть скрипт:
         <pre><code>python script_name.py</code></pre>
     </li>
 </ol>
 
-<h3>Commands</h3>
+<h3>Команди</h3>
 <table>
     <tr>
-        <th>Command</th>
-        <th>Description</th>
+        <th>Команда</th>
+        <th>Опис</th>
     </tr>
     <tr>
         <td><code>-p</code></td>
-        <td>Prompts for a URL and parses the content from the specified section on the webpage.</td>
+        <td>Запитує URL і парсить контент з визначеного розділу на веб-сторінці.</td>
     </tr>
     <tr>
         <td><code>-cop</code></td>
-        <td>Copies the parsed content to the clipboard. Requires that you’ve already used <code>-p</code>.</td>
+        <td>Копіює парсений контент у буфер обміну. Потрібно попередньо використати <code>-p</code>.</td>
     </tr>
     <tr>
         <td><code>-save</code></td>
-        <td>Saves the parsed content to a text file. Requires that you’ve already used <code>-p</code>.</td>
+        <td>Зберігає парсений контент у текстовий файл. Потрібно попередньо використати <code>-p</code>.</td>
     </tr>
     <tr>
         <td><code>-help</code></td>
-        <td>Displays a list of available commands.</td>
+        <td>Відображає список доступних команд.</td>
     </tr>
     <tr>
         <td><code>-terminate</code></td>
-        <td>Exits the script.</td>
+        <td>Виходить зі скрипту.</td>
     </tr>
 </table>
 
-<h2>Example Workflow</h2>
+<h2>Приклад роботи</h2>
 <ol>
-    <li>Start the script by running it in the terminal.</li>
-    <li>Enter <code>-p</code> to parse a webpage and enter the URL when prompted.</li>
-    <li>After parsing, use <code>-cop</code> to copy the content or <code>-save</code> to save it.</li>
-    <li>To exit, type <code>-terminate</code>.</li>
+    <li>Запустіть скрипт у терміналі.</li>
+    <li>Введіть <code>-p</code>, щоб парсити веб-сторінку, і введіть URL, коли буде запропоновано.</li>
+    <li>Після парсингу використовуйте <code>-cop</code>, щоб скопіювати контент або <code>-save</code>, щоб зберегти його.</li>
+    <li>Щоб вийти, введіть <code>-terminate</code>.</li>
 </ol>
 
-<h2>Error Handling</h2>
-<p>The script includes basic error handling:</p>
+<h2>Обробка помилок</h2>
+<p>Скрипт містить базову обробку помилок:</p>
 <ul>
-    <li>If the URL cannot be reached or parsed, an error message will appear.</li>
-    <li>If you attempt to copy or save content before parsing, the script will prompt you to parse first.</li>
+    <li>Якщо URL не може бути досягнутий або парсений, з'явиться повідомлення про помилку.</li>
+    <li>Якщо ви спробуєте скопіювати або зберегти контент перед парсингом, скрипт запропонує спочатку провести парсинг.</li>
 </ul>
 
-<h2>Future Improvements</h2>
-<p>Possible future improvements could include:</p>
+<h2>Майбутні покращення</h2>
+<p>Можливі майбутні покращення можуть включати:</p>
 <ul>
-    <li>Allowing users to specify custom HTML tags or classes to parse.</li>
-    <li>Adding options for different output formats, such as JSON or CSV.</li>
-    <li>Enhanced error handling for better robustness.</li>
+    <li>Дозволити користувачам вказувати власні HTML-теги або класи для парсингу.</li>
+    <li>Додавання опцій для різних форматів виводу, таких як JSON або CSV.</li>
+    <li>Покращена обробка помилок для кращої надійності.</li>
 </ul>
 
-<h2>License</h2>
-<p>This project is licensed under the MIT License. See the LICENSE file for details.</p>
+<h2>Ліцензія</h2>
+<p>Цей проект ліцензований під ліцензією MIT. Дивіться файл LICENSE для деталей.</p>
 
 </body>
 </html>
