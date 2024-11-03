@@ -3,53 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Парсер веб-контенту</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            margin: 20px;
-            padding: 20px;
-            background-color: #f9f9f9;
-            border: 1px solid #ccc;
-            border-radius: 8px;
-        }
-        h1, h2, h3, h4 {
-            color: #333;
-        }
-        code {
-            background-color: #eee;
-            padding: 2px 4px;
-            border-radius: 4px;
-        }
-        pre {
-            background-color: #eee;
-            padding: 10px;
-            border-radius: 4px;
-            overflow: auto;
-        }
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin: 20px 0;
-        }
-        th, td {
-            border: 1px solid #ccc;
-            padding: 8px;
-            text-align: left;
-        }
-        th {
-            background-color: #f2f2f2;
-        }
-        ul {
-            list-style-type: disc;
-            margin: 10px 0;
-            padding-left: 20px;
-        }
-        li {
-            margin: 5px 0;
-        }
-    </style>
 </head>
 <body>
 
